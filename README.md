@@ -1,9 +1,6 @@
 # Half Edge Mesh
 The mesh data structure I made for my mesh editor project in Qt
 
-======================
-======================
-
 Structure Detail
 ----------------------
 The Mesh structure contains a face, vertex, and half-edge. A half edge is like a normal edge, except it only goes in one direction. Each face points to a half-edge that coincides on that face, each vertex points to the half-edge that points to it, and each half-edge points to the face that it coincides on, the half-edge that comes after it, the half-edge that makes the other half of the edge; the one that goes in the opposite direction, and the vertex that it shares with the next half-edge. Each of those classes contain a static counter that assigns unique iDs to every piece of geometry created. The mesh data structure contains a vector of faces, a vector of half-edges, and a vector of vertices.
@@ -12,7 +9,6 @@ Face, HalfEdge, and Vertex all inherit QListWidgetItem so that they can be displ
 
 
 # Classes
-=======================
 
 **Face**
 - int counter: static integer to assign unique iDs to each face created
