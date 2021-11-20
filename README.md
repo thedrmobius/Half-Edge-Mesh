@@ -1,4 +1,4 @@
-**Half Edge Mesh**
+# Half Edge Mesh
 
 The mesh data structure I made for my mesh editor project in Qt
 
